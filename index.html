@@ -6,7 +6,28 @@
     <title>WebDev_CP3</title>
 </head>
 <body>
-    
+    <form id ="form" style="display: flex; flex-direction: column;">
+        <label for="nomeProduto"> Nome do Produto: </label>
+        <input type="text" id="nomeProduto">
+ 
+        <label for="preco">Preço: </label>
+        <input type="text" id="preco">
+ 
+        <select id="categoria">
+            <option value="Lazer">Lazer</option>
+            <option value="Doméstico">Doméstico</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Manutenção">Manutenção</option>
+        </select>
+ 
+        <button id="btnEnviar">Cadastrar produto</button>
+
+        <p id="mensagemErro"></p>
+
+        <ul id="cadastroProduto">
+        </ul>
+    </form>
 </body>
-    <script ></script>
+    <script src="app.js" ></script>
 </html>
